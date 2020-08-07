@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nps Search</title>
+</head>
+<body>
+    <header>
+        <h1>Nps Search</h1>
+        <form id="search-form">
+            <div class="input-container">
+                <label for="search-input">Search:</label>
+                <input type="search" id="search-input"/>
+                <label for="max-results">MaxResults:</label>
+                <input type="number" style='width: 50px;' id="max-results" value=10 />
+                <label for="state-select">MaxResults:</label>
+                <select id="state-select">
+                    <option value="WA">WA</option>
+                    <option value="CA">CA</option>
+                    <option value="AZ">AZ</option>
+                </select>
+                <button id="submit" type="submit">Search</button>
+            </div>
+        </form>
+    </header>
+    <main>
+        
+    </main>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./state.js"></script>
+</body>
+</html>
